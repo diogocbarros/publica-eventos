@@ -2,6 +2,7 @@ import React from 'react';
 import './login.css';
 import firebase from '../../config/firebase';
 import 'firebase/auth';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = React.useState('');
@@ -54,9 +55,9 @@ function Login() {
           <a href="#" className="mx-2">
             Recuperar Senha
           </a>
-          <a href="#" className="mx-2">
+          <Link to="/novousuario" className="mx-2">
             Quero Cadastrar
-          </a>
+          </Link>
         </div>
 
         <small id="helper" class="form-text text-muted">
