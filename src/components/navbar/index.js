@@ -16,20 +16,17 @@ function navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <i className="fas fa-bars text-white"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link to="/" className="nav-item nav-link active text-white">
+            <Link to="/" className="nav-item nav-link active ">
               Home
             </Link>
-            <Link to="/" className="nav-item nav-link active text-white">
+            <Link to="/login" className="nav-item nav-link active ">
               Login
             </Link>
-            <Link
-              to="/novousuario"
-              className="nav-item nav-link active text-white"
-            >
+            <Link to="/novousuario" className="nav-item nav-link active ">
               Cadastrar
             </Link>
           </div>
