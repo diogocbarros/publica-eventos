@@ -4,10 +4,13 @@ import './app.css';
 import Login from './view/login';
 import Home from './view/home';
 import NovoUsuario from './view/new-user';
+// Reducer
+import store from './store';
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -15,7 +18,7 @@ function App() {
           <Route path="/novousuario" element={<NovoUsuario />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </Provider>
   );
 }
 
