@@ -57,8 +57,8 @@ function NewUser() {
   return (
     <>
       <Navbar />
-      <div className="form-cadastro">
-        <form className="form-login text-center mx-auto mt-5" noValidate>
+      <div className="form-cadastro d-flex align-items-center pt-1">
+        <form className="form-login  text-center mx-auto mt-5" noValidate>
           <h1 className="h3 mb-3 text-black font-weight-bold">
             Cadastro de Usuario
           </h1>

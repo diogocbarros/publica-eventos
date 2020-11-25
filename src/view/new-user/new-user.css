@@ -1,5 +1,7 @@
-.form-login {
-  max-width: 25%;
+.form-cadastro {
+  padding: 15%;
+  margin: auto;
+  height: 100vh;
 }
 
 .btn-cadastro {

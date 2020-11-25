@@ -29,7 +29,7 @@ function Login() {
   return (
     <>
       <Navbar />
-      <div className="login-content d-flex align-items-center">
+      <div className="login-content d-flex align-items-center pt-1">
         {useSelector((state) => state.usuarioLogado) > 0 ? (
           <Navigate to="/" />
         ) : null}
@@ -65,9 +65,9 @@ function Login() {
             Entrar
           </button>
           <div className="opcoes-login mt-2">
-            <a href="#" className="mx-2">
+            <Link to="/recuperasenha" className="mx-2">
               Recuperar Senha
-            </a>
+            </Link>
             <Link to="/novousuario" className="mx-2">
               Quero Cadastrar
             </Link>
